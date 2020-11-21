@@ -1,0 +1,29 @@
+
+;Program for MOVING A STRING WITHOUT USING STRING OPERATIONS
+
+assume cs:code,ds:data
+data segment
+	count dw 0005h
+	org 0010h
+	str1 db
+0aah,0aah,0aah,0aah,0aah
+	org 0020h
+	str2 dw
+00h,00h,00h,00h,00h
+data ends
+code segment
+	org 0100h
+start: mov ax,data
+	mov ds,ax
+	mov cx,count
+	lea si,str1
+	lea bx,str2
+loop_a: mov ax,[si]
+	mov [bx],ax
+	inc si
+	inc bx
+	loop loop_a
+	mov ah,4ch
+	int 21h
+code ends
+end start

@@ -13,4 +13,6 @@
 * Ex-11 System date and time
 * Ex-12 8 bit arithmetic operations using 8051
 * Ex-13 Cube of a number using 8051
-* Ex-14 BCD to ASCII conversion using 8051File
+* Ex-14 BCD to ASCII conversion using 8051
+masm and EdSim51 files included
+

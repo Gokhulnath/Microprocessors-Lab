@@ -1,0 +1,10 @@
+	MOV A, r1
+	SWAP A
+	ANL A, #0FH
+	ADD A, #30H
+	MOV r2, A
+	MOV A, r1
+	ANL A, #0FH
+	ADD A, #30H
+	MOV r3, A
+HERE:	SJMP HERE
